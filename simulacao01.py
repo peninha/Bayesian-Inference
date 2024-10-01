@@ -142,9 +142,9 @@ def plotPX():
     
 
 seed = 4 #seed for random number generator
-rd.seed(seed) 
+#rd.seed(seed) 
 whiteBalls = 100 #how many white balls are in the bag?
-whiteProb = .3 #what is white balls break rate for each teste?
+whiteProb = .1 #what is white balls break rate for each test?
 blackBalls = 0 #how many black balls are in the bag?
 blackProb = .5 #black balls break rate
 
@@ -164,8 +164,8 @@ Px = {  #Prior probability distribution of X (break rate)
 bag = bagOfBalls(whiteBalls, blackBalls, whiteProb, blackProb)
 bag.showBag()
 
-ballsPicked = 5 #how many balls are picked por round?
-testRounds = 8 #how many test rounds?
+ballsPicked = 5 #how many balls are picked per round?
+testRounds = 10 #how many test rounds?
 
 for _ in range(testRounds):
     bag.pickBalls(ballsPicked)
